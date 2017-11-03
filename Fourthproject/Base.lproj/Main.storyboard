@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fourthproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-photo-243752" translatesAutoresizingMaskIntoConstraints="NO" id="dTZ-gd-DrY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cL-zp-uFT">
+                                <rect key="frame" x="-112" y="0.0" width="169" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYc-gf-WpW" customClass="MenuDesign" customModule="Fourthproject" customModuleProvider="target">
+                                        <rect key="frame" x="123" y="311" width="44" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.44432218309859156" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWv-gG-Tjv">
+                                        <rect key="frame" x="131" y="314" width="38" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="Gx8-jN-jb5"/>
+                                            <constraint firstAttribute="width" constant="38" id="WQg-1W-76G"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="icons8-forward"/>
+                                        <connections>
+                                            <action selector="MenuToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OhN-Wm-mTj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="xYc-gf-WpW" firstAttribute="top" secondItem="7cL-zp-uFT" secondAttribute="top" constant="311" id="AAc-cz-lBh"/>
+                                    <constraint firstItem="xYc-gf-WpW" firstAttribute="centerY" secondItem="7cL-zp-uFT" secondAttribute="centerY" id="UiG-5d-2X3"/>
+                                    <constraint firstItem="xYc-gf-WpW" firstAttribute="leading" secondItem="7cL-zp-uFT" secondAttribute="leading" constant="123" id="ceC-3l-hTC"/>
+                                    <constraint firstAttribute="trailing" secondItem="xYc-gf-WpW" secondAttribute="trailing" constant="2" id="dSQ-Qs-Up1"/>
+                                    <constraint firstAttribute="width" constant="169" id="gIe-WC-Qaj"/>
+                                    <constraint firstAttribute="trailing" secondItem="FWv-gG-Tjv" secondAttribute="trailing" id="mHU-ga-RVR"/>
+                                    <constraint firstItem="xYc-gf-WpW" firstAttribute="centerY" secondItem="FWv-gG-Tjv" secondAttribute="centerY" id="tsq-lA-gsl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7cL-zp-uFT" firstAttribute="top" secondItem="dTZ-gd-DrY" secondAttribute="top" id="4Fc-Uw-Set"/>
+                            <constraint firstAttribute="trailing" secondItem="dTZ-gd-DrY" secondAttribute="trailing" id="SuN-UO-Sqq"/>
+                            <constraint firstItem="dTZ-gd-DrY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aj4-Lh-5yd"/>
+                            <constraint firstItem="7cL-zp-uFT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="b4g-Zq-XUE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7cL-zp-uFT" secondAttribute="bottom" id="fBx-kl-Rqu"/>
+                            <constraint firstAttribute="trailing" secondItem="7cL-zp-uFT" secondAttribute="trailing" constant="318" id="jSN-uR-UAY"/>
+                            <constraint firstItem="7cL-zp-uFT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-112" id="oOJ-nV-2Iv"/>
+                            <constraint firstItem="7cL-zp-uFT" firstAttribute="bottom" secondItem="dTZ-gd-DrY" secondAttribute="bottom" id="xmu-Jy-bCt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DarkCircle" destination="xYc-gf-WpW" id="FbG-PW-NgP"/>
+                        <outlet property="MenuButton" destination="FWv-gG-Tjv" id="bhs-JN-Yks"/>
+                        <outlet property="MenuView" destination="7cL-zp-uFT" id="JKj-gm-hfd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-forward" width="50" height="50"/>
+        <image name="pexels-photo-243752" width="500" height="750"/>
+    </resources>
+</document>
